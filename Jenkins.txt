@@ -5,13 +5,13 @@ pipeline {
 	        steps{
 
 			bat("""
-		            git clone https://github.com/hw2cb/spring-petclinic.git
+		            git clone https://github.com/Serkuz90/spring-petclinic.git
 		            """)
 	        }
 	    }
             stage('Build'){
                 steps{
-                        bat('C:\\Users\\Administrator\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\petclinicJob\\build.bat')
+                        bat("E:\JenkinsHome\.jenkins\workspace\JobLab2PetClinic\build.bat")
                 }	
 	    }
             stage('Archive'){
