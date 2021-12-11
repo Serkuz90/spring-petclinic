@@ -11,7 +11,7 @@ pipeline {
 	    }
             stage('Build'){
                 steps{
-                        bat("E:\JenkinsHome\.jenkins\workspace\JobLab2PetClinic\build.bat")
+                        bat('E:\\JenkinsHome\\.jenkins\\workspace\\JobLab2PetClinic\\build.bat')
                 }	
 	    }
             stage('Archive'){
