@@ -179,6 +179,14 @@ class OwnerControllerTests {
 	}
 
 	@Test
+	void testAge() throws Exception {
+		if(george.age>200)
+		{
+			throw new IllegalArgumentException();
+		}
+	} 
+
+	@Test
 	void testProcessUpdateOwnerFormHasErrors() throws Exception {
 		mockMvc.perform(post("/owners/{ownerId}/edit", TEST_OWNER_ID).param("firstName", "Joe")
 				.param("lastName", "Bloggs").param("city", "London")).andExpect(status().isOk())

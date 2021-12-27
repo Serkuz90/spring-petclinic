@@ -88,4 +88,12 @@ class VetControllerTests {
 				.andExpect(jsonPath("$.vetList[0].id").value(1));
 	}
 
+	@Test
+	void testAge() throws Exception {
+		if(james.age>200 && helen.age>200)
+		{
+			throw new IllegalArgumentException();
+		}
+	} 
+
 }
